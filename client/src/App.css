@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #e7e7e7, #ffffff);
+}
+.input{
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  min-height: 30px;
+  max-height: 30px;
+}
+select{
+  border-radius: 5px;
+  padding: 5px 10px;
+  outline: none;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  min-height: 30px;
+  max-height: 30px;
+}
+.btn{
+  background: #f4f4f4;
+  transition: .3s all ease-in-out;
+  cursor: pointer;
+}
+.btn:hover{
+  background: #e4e4e4;
+}
+.container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background: rgba(194, 194, 194, 0.1);
+    position: relative;
+}
+.app_title{
+    text-align: center;
+    margin: 20px 0;
+    font-weight: 600;
+}
+.tasks_options{
+    display: grid;
+  grid-gap: 16px;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+}
+.search_form {
+  grid-column: 1 / 4;
+  display: block;
+}
+.search_form input{
+  display: block;
+  width: 100%;
+}
+/* TaskList.css */
+
+.task_list-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+.task_list {
+  margin: 20px 0;
+}
+
+
+.task_item {
+  background: #f4f4f4;
+  margin: 10px 0;
+  padding: 15px;
+  position: relative;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+
+
+.task_item:hover {
+  background: #e4e4e4;
+}
+
+.task_buttons {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  display: none;
+}
+
+.task_item:hover .task_buttons {
+  display: block;
+}
+
+.task_buttons button {
+  margin-left: 5px;
+  padding: 5px 10px;
+}
+
+
+.modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: left;
+  width: 400px;
+}
+.modal-content h2{
+  margin: 20px;
+  text-align: center;
+}
+
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content label {
+  margin-bottom: 10px;
+}
+
+.modal-content input,
+.modal-content select {
+  font-size: 16px;
+  margin: 10px 5px;
+  min-height: 40px;
+}
+
+.modal-content button {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.modal-content button:hover {
+  background-color: #0056b3;
+}
+
+.pagination{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+}
+.pagination .btn{
+  min-height: 40px;
+  min-width: 140px;
+}
